@@ -1,0 +1,34 @@
+/* MENU - CSS*/
+header, nav {
+    text-align: center;
+    background: black;
+    color: white;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    border-radius: 25px;
+    justify-content: space-around;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+
+a:hover {
+    color: rgb(119, 0, 255);
+}
+
+
+a::after {
+    content: " | ";
+    color: white;
+}
+
+a:last-child::after {
+    content: " ";
+}

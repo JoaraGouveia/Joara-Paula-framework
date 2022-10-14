@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cadastro de Imóveis</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  
+  </head>
+  
+  <body class="container">
+    <header>
+      <div>
+        <p>Corretora Imobiliária</p>
+      </div>
+  
+      <div>
+        <nav>
+          <a href="index.html">Página Inicial</a>
+          <a href="list-imoveis.html">Lista de Imóveis</a>
+          <a href="cadastro-imoveis.html">Anuncie seu Imóvel</a>
+          <a href="corretores.html">Cadastro de Corretores</a>
+        </nav>
+      </div>
+    </header>
+
+    <h2>Adicionar Imóvel</h2>
+    <form action="">
+      <div>
+        <label for="link-foto">Link para foto: </label>
+        <input type="url" id="link-foto" name="link-foto" />
+      </div>
+
+      <div>
+        <label for="descricao">Descrição do Imóvel: </label>
+        <!-- Adicione o id apropriado para o input abaixo -->
+        <input type="text" id="desc" name="descrição" />
+      </div>
+
+      <div>
+        <label for="preco">Preço (em R$): </label>
+        <!-- Adicione o id apropriado e o type para receber números abaixo -->
+        <input type="number" id="preco" name="preço" />
+      </div>
+
+      <div>
+        <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+        <label>Contato do corretor: </label>
+        <input type="text" id="nomeCorretor" name="nomeCorretor" placeholder="Fulano de Tal corretor"/>
+        <input type="tel" id="telCorretor" name="telCorretor" placeholder="(81) 000000000"/>
+      </div>
+
+      <div class="form-add">
+        <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+        <button type="submit">Adicionar</button>
+      </div>
+    </form>
+
+    
+  <footer>
+    By Katia, outubro-2022
+  </footer>
+  </body>
+</html>
