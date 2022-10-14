@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Empresa Corretora Imobiliária</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/menu.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="container">
+  <header>
+    <div>
+      <p>Empresa Corretora Imobiliária</p>
+    </div>
+
+    <div>
+      <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="list-imoveis.html">Lista de Imóveis</a>
+        <a href="cadastro-imoveis.html">Anuncie seu Imóvel</a>
+        <a href="corretores.html">Cadastro de Corretores</a>
+        <a href="marcacao.html">Agendar Visita</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+      <form action="">
+        <fieldset>
+          <legend>Agendamento de Visitas:</legend>
+          <fieldset class="conjunto__dadosCliente">
+            <legend>Dados pessoais</legend>
+            <label for="nomeCliente">Nome:</label>
+            <input type="text" name="nomeCliente" id="nomeCliente" placeholder="Digite seu nome...">
+            
+            <label for="telCliente">Tel.:</label>
+            <input type="tel" name="telCliente" id="telCliente" placeholder="Digite seu telefone...">
+            
+            <label for="emailCliente">Tel.:</label>
+            <input type="email" name="emailCliente" id="emailCliente" placeholder="Digite seu email...">
+            
+            <label for="cpfCliente">CPF:</label>
+            <input type="text" name="cpfCliente" id="cpfCliente" placeholder="Digite seu cpf..." >
+          </fieldset>
+          
+          <fieldset>
+            <legend>Tipo de visita</legend>
+              <div>
+                <input type="radio" name="radiobox" value="Presencial" class="tipo_visita" id="visita__presencial">
+                <label for="visita__presencial">Presencial</label>
+                <input type="radio" name="radiobox" value="Virtual" class="tipo_visita" id="visita__virtual">
+                <label for="visita__virtual">Virtual</label>
+              </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Imóveis disponíveis</legend>
+            <table id="tabela__agendamento">
+              <tr>
+                <th> </th>
+                <th>Imóvel</th>
+                <th>Preço (R$)</th>
+                <th>Contato do Corretor</th>
+              </tr>
+        
+              <tr>
+                <td><img src="./img/casa1.jpg" alt="casa1" /></td>
+                <td>Casa duplex </td>
+                <td>R$ 200.000,00</td>
+                <td>(81) 000000000</td>
+              </tr>
+        
+              <tr>
+                <td><img src="./img/casa2.jpeg" alt="casa2" /></td>
+                <td>Casa duplex </td>
+                <td>R$ 50.000,00</td>
+                <td>(81) 000000000</td>
+              </tr>
+        
+              <tr>
+                <td><img src="./img/casa_5.jpg" alt="casa_5" /></td>
+                <td>Casa duplex </td>
+                <td>R$ 70.000,00</td>
+                <td>(81) 000000000</td>
+              </tr>
+        
+              <tr>
+                <td><img src="./img/casa4.jpg" alt="casa4" /></td>
+                <td>Casa duplex </td>
+                <td>R$ 80.000,00</td>
+                <td>(81) 000000000</td>
+              </tr>
+            
+        
+            </table>
+          </fieldset>
+          <div style="display: flex; justify-content: flex-end;">
+            <input type="button" value="Agendar">
+          </div>
+        </fieldset>
+        </form>
+  </main>
+
+
+
+  <footer>
+    By Katia, Outubro-2022
+  </footer>
+
+</body>
+
+</html>
