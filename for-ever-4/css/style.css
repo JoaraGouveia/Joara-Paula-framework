@@ -1,0 +1,96 @@
+/* INDEX */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cabecalho {
+    background-color: rgb(174, 0, 255);
+    grid-column: 1 / 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50px;
+}
+
+.conteudo__1 {
+    height: calc(50vh - 50px);
+    width: 100vw;
+    background-color: rgb(209, 112, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+.conteudo__2 {
+    height: calc(50vh - 50px);
+    width: 100vw;
+    background-color: rgb(243, 112, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: orangered;
+    font-size: 32px;
+}
+
+
+
+.rodape {
+    background-color: rgb(255, 0, 179);
+    grid-column: 1 / 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+}
+
+/* LOJA */
+
+.conteudo__principal {
+    background: rgb(255, 255, 255);
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.divBusca {
+    margin-top: 10px;
+    border:solid 1px  gray;
+    border-radius:15px;
+    width:300px;
+}
+
+.txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border: none;
+    height:32px;
+    width:260px;
+}
+
+table, th, td {
+    margin-right: 15px;
+}
